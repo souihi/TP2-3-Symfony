@@ -29,14 +29,14 @@ class AppFixtures extends Fixture
         $user = new User();
         $user->setEmail("user@bookapi.com");
         $user->setRoles(["ROLE_USER"]);
-        $user->setPassword($this->userPasswordHasher->hashPassword($user, "password"));
+        $user->setPassword($this->userPasswordHasher->hashPassword($user, "azerty"));
         $manager->persist($user);
         
         // Création d'un user admin
         $userAdmin = new User();
         $userAdmin->setEmail("demo@apipen.fr");
         $userAdmin->setRoles(["ROLE_ADMIN"]);
-        $userAdmin->setPassword($this->userPasswordHasher->hashPassword($userAdmin, "password"));
+        $userAdmin->setPassword($this->userPasswordHasher->hashPassword($userAdmin, "azery"));
         $manager->persist($userAdmin);
         // Création des types
         $types = [];
