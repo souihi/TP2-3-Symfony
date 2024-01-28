@@ -1,0 +1,6 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Documentation Api pen
+            description: Api pen, Crud  
+            version: 1.0.0

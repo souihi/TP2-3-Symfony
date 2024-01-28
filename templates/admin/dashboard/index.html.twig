@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tableau de Bord{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1 class="text-center">Bienvenue sur le Tableau de Bord Symfony! ✅</h1>
+
+        <div class="alert alert-info" role="alert">
+            Ce message amical provient de :
+            <ul>
+                <li>Votre contrôleur à <code><a href="{{ 'C:/wamp64/www/apiPen/src/Controller/Admin/DashboardController.php'|file_link(0) }}">src/Controller/Admin/DashboardController.php</a></code></li>
+                <li>Votre modèle à <code><a href="{{ 'C:/wamp64/www/apiPen/templates/admin/dashboard/index.html.twig'|file_link(0) }}">templates/admin/dashboard/index.html.twig</a></code></li>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <p>Vous pouvez accéder aux pages suivantes :</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a class="btn btn-primary" href="{{ path('app_brands_index') }}">Liste des Marques</a></li>
+                <li class="list-inline-item"><a class="btn btn-success" href="{{ path('app_colors_index') }}">Liste des Couleurs</a></li>
+                <li class="list-inline-item"><a class="btn btn-warning" href="{{ path('app_types_index') }}">Liste des Types</a></li>
+                <li class="list-inline-item"><a class="btn btn-info" href="{{ path('app_pens_index') }}">Liste des Stylos</a></li>
+                <li class="list-inline-item"><a class="btn btn-danger" href="{{ path('app_materials_index') }}">Liste des Matériaux</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
